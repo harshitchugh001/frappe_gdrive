@@ -137,6 +137,17 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
+
+doc_events = {
+    "File": {
+        "after_insert": "frappe_gdrive.api.drive_handler.enqueue_upload_to_drive"
+    }
+}
+
+override_whitelisted_methods = {
+    "frappe_gdrive.api.googlecode.capture_code": "frappe_gdrive.api.googlecode.capture_code"
+}
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",

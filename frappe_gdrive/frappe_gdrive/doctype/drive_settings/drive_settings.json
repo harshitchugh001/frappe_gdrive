@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-13 18:21:17.811802",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_drive_upload",
+  "google_drive_folder_id",
+  "service_account_json",
+  "share_type",
+  "delete_local_copy",
+  "last_synced",
+  "log_messages",
+  "shared",
+  "outh_client_id",
+  "outh_client_secret",
+  "oauth_redirect_uri",
+  "authrize_account",
+  "access_token",
+  "refresh_token"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable_drive_upload",
+   "fieldtype": "Check",
+   "label": "Enable Drive Upload"
+  },
+  {
+   "fieldname": "google_drive_folder_id",
+   "fieldtype": "Data",
+   "label": "Google Drive Folder ID"
+  },
+  {
+   "fieldname": "service_account_json",
+   "fieldtype": "Long Text",
+   "label": "Service Account JSON"
+  },
+  {
+   "fieldname": "share_type",
+   "fieldtype": "Select",
+   "label": "Share Type",
+   "options": "\nAnyone with link\nRestricted"
+  },
+  {
+   "default": "0",
+   "fieldname": "delete_local_copy",
+   "fieldtype": "Check",
+   "label": "Delete Local Copy"
+  },
+  {
+   "fieldname": "last_synced",
+   "fieldtype": "Datetime",
+   "label": "Last Synced"
+  },
+  {
+   "fieldname": "log_messages",
+   "fieldtype": "Long Text",
+   "label": "Log Messages"
+  },
+  {
+   "default": "0",
+   "fieldname": "shared",
+   "fieldtype": "Check",
+   "label": "shared"
+  },
+  {
+   "fieldname": "outh_client_id",
+   "fieldtype": "Data",
+   "label": "Outh client Id"
+  },
+  {
+   "fieldname": "outh_client_secret",
+   "fieldtype": "Data",
+   "label": "Outh client secret"
+  },
+  {
+   "fieldname": "oauth_redirect_uri",
+   "fieldtype": "Data",
+   "label": "oauth redirect uri"
+  },
+  {
+   "fieldname": "authrize_account",
+   "fieldtype": "Button",
+   "label": "Authrize Account"
+  },
+  {
+   "fieldname": "access_token",
+   "fieldtype": "Long Text",
+   "label": "Access Token"
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Long Text",
+   "label": "refresh token"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-16 16:11:40.906028",
+ "modified_by": "Administrator",
+ "module": "frappe_gdrive",
+ "name": "Drive Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
